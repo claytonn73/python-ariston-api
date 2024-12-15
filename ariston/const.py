@@ -258,6 +258,8 @@ class ConsumptionType(Enum):
     DOMESTIC_HOT_WATER_GAS = 10
     CENTRAL_HEATING_ELECTRICITY = 20
     DOMESTIC_HOT_WATER_ELECTRICITY = 21
+    CENTRAL_HEATING_HEATPUMP = 24
+    DOMESTIC_HOT_WATER_HEATPUMP = 25    
 
 
 @unique
@@ -268,8 +270,8 @@ class ConsumptionTimeInterval(Enum):
 
     LAST_DAY = 1
     LAST_WEEK = 2
-    LAST_MONTH = 3
-    LAST_YEAR = 4
+    LAST_MONTH = 3 # Last month and current month
+    LAST_YEAR = 4 # Last year and current year
 
 
 class DeviceAttribute:
